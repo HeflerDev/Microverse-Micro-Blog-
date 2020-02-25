@@ -22,6 +22,13 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# ----Custom Gems----
+gem 'better_errors' #Make errors better-looking
+gem 'bulma-rails' #Bulma Css
+gem 'guard'
+gem 'guard-livereload' # Automatically reloads when VIEW is changed
+gem 'simple_form'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

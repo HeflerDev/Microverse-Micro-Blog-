@@ -23,11 +23,9 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # ----Custom Gems----
-gem 'better_errors' #Make errors better-looking
 gem 'bulma-rails' #Bulma Css
-gem 'guard'
-gem 'guard-livereload' # Automatically reloads when VIEW is changed
-gem 'simple_form'
+gem 'guard' # init with # bundle exec guard # because it needs of its dependencies
+gem 'simple_form' # Init with # rails generate simple_form:install #
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -44,9 +42,11 @@ group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'guard-livereload', require:false # Automatically reloads when VIEW is changed #init with # guard init livereload # needs browser extension
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors' #Make errors better-looking
 end
 
 group :test do
